@@ -111,7 +111,7 @@
                         <button class="qty-btn" id="qty-plus" type="button" aria-label="Increase quantity">+</button>
                     </div>
                     <!-- CHANGED: added id + data-variant-id. Replace REPLACE_WITH_VARIANT_ID below -->
-                    <button class="add-to-cart-btn" type="button" id="bag-now-btn" data-variant-id="REPLACE_WITH_VARIANT_ID">BAG NOW</button>
+                    <button class="add-to-cart-btn" type="button" id="bag-now-btn" data-variant-id="51448010834261">BAG NOW</button>
                 </div>
                 <!-- CHANGED: status message for add-to-cart feedback -->
                 <p id="cart-msg" style="display:none; margin-top:0.75rem; font-weight:600;"></p>
@@ -256,7 +256,7 @@
             const variantId = bagNowBtn.getAttribute('data-variant-id');
             const quantity  = parseInt(qtyInput.value);
 
-            if (!variantId || variantId === 'REPLACE_WITH_VARIANT_ID') {
+            if (!variantId) {
                 cartMsg.textContent = 'Product not connected yet — set the variant ID.';
                 cartMsg.style.color = '#ff4d4d';
                 cartMsg.style.display = 'block';
