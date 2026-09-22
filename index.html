@@ -201,11 +201,11 @@
             <div class="footer-col">
               <h4 class="footer-heading">HELP & CARE</h4>
               <ul class="footer-list">
-               <li><a href="javascript:void(0)" onclick="openPolicyModal('shipping-modal')">Shipping Policy</a></li>
-               <li><a href="javascript:void(0)" onclick="openPolicyModal('returns-modal')">Returns & Refunds</a></li>
-               <li><a href="javascript:void(0)" onclick="openPolicyModal('psoriasis-modal')">Psoriasis Care FAQ</a></li>
+                <li><a href="javascript:void(0)" onclick="openPolicyModal('shipping-modal')">Shipping Policy</a></li>
+                <li><a href="javascript:void(0)" onclick="openPolicyModal('returns-modal')">Returns & Refunds</a></li>
+                <li><a href="javascript:void(0)" onclick="openPolicyModal('psoriasis-modal')">Psoriasis Care FAQ</a></li>
               </ul>
-             </div>
+            </div>
            
 
             <div class="footer-col">
@@ -272,26 +272,28 @@
     </div>
 </div>
 
-<!-- PSORIASIS CARE FAQ MODAL -->
-<div id="psoriasis-modal" class="overlay-container" style="display:none; align-items: center; justify-content: center; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; background: rgba(0,0,0,0.8);">
-    <div class="overlay-box" style="max-width: 600px; width: 90%; max-height: 85vh; overflow-y: auto; text-align: left; padding: 2rem; box-sizing: border-box; display: flex; flex-direction: column;">
-        <h2 class="overlay-title" style="margin-top: 0;">SCALP CARE FAQ</h2>
-        <div class="what-text" style="margin-top: 1rem; color: #a0a0a0; line-height: 1.6; flex-grow: 1;">
+    <!-- PSORIASIS CARE FAQ MODAL -->
+<div id="psoriasis-modal" class="overlay-container" style="display:none;">
+    <div class="overlay-box" style="max-width: 600px; text-align: left; max-height: 90vh; overflow-y: auto; display: flex; flex-direction: column;">
+        <h2 class="overlay-title">SCALP CARE</h2>
+        <div class="what-text" style="margin-top: 1rem; color: #a0a0a0; line-height: 1.6; flex: 1;">
             <p>Let us start by saying this product will not cure your psoriasis. But what it will do is make your scalp psoriasis ten times easier to manage and live with.</p>
             <br>
-            <p>To get the best use out of your scalp oil, here are a few things you can do:</p>
+            <p>To get the best use out of your scalp oil, here are a few things you can do.</p>
             <br>
-            <p><strong>1. Pre-Shampoo Treatment:</strong> Apply it to your hair, paying close attention to the ends of your hair. You can also apply some of it to your scalp to help loosen any buildup and dirt.</p>
+            <p>First, you can use it as a pre-shampoo before you wash your hair. Apply it to your hair, paying close attention to the ends of your hair. You can also apply some of it to your scalp to help loosen any buildup and dirt.</p>
             <br>
-            <p><small><strong>Quick tip:</strong> Massage the oil into your scalp with a scalp massager. This helps stimulate blood flow and support healthy hair growth. Once you’ve done this, wait for fifteen to thirty minutes to let the oil do its thing before proceeding to wash your hair.</small></p>
+            <p><small><strong>Quick tip.</strong> Massage the oil into your scalp with a scalp massager. This helps stimulate blood flow and support healthy hair growth. Once you’ve done this, wait for fifteen to thirty minutes to let the oil do its thing before proceeding to wash your hair.</small></p>
             <br>
-            <p><strong>2. Regular Oil Routine:</strong> On the flip side, you can use the oil like any normal oil. You can use the oil as part of your moisture routine or to help pattern your scalp when it’s dry or flaky. A little goes a long way, so you don’t have to overdo it.</p>
+            <p>On the flip side, you can use the oil like any normal oil. You can use the oil as part of your moisture routine or to help pattern your scalp when it’s dry or flaky. A little goes a long way, so you don’t have to overdo it.</p>
             <br>
             <p><strong>Enjoy!</strong></p>
         </div>
         <button class="overlay-btn" style="margin-top: 1.5rem; width: 100%; flex-shrink: 0;" onclick="closePolicyModal('psoriasis-modal')">CLOSE</button>
     </div>
 </div>
+
+    
 <script>
     function openPolicyModal(id) {
         document.getElementById(id).style.display = 'flex';
