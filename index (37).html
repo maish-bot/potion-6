@@ -110,10 +110,8 @@
                         <input type="number" id="qty-input" value="1" min="1" readonly aria-label="Quantity">
                         <button class="qty-btn" id="qty-plus" type="button" aria-label="Increase quantity">+</button>
                     </div>
-                    <!-- CHANGED: added id + data-variant-id. Replace REPLACE_WITH_VARIANT_ID below -->
                     <button class="add-to-cart-btn" type="button" id="bag-now-btn" data-variant-id="51448010834261">BAG NOW</button>
                 </div>
-                <!-- CHANGED: status message for add-to-cart feedback -->
                 <p id="cart-msg" style="display:none; margin-top:0.75rem; font-weight:600;"></p>
 
                 <h2 class="sketch-tagline">The only oil you’ll ever need</h2>
@@ -248,7 +246,7 @@
             qtyInput.value = val + 1;
         });
 
-        // CHANGED: Real Shopify Add to Cart (AJAX Cart API)
+        // Real Shopify Add to Cart (AJAX Cart API)
         const bagNowBtn = document.getElementById('bag-now-btn');
         const cartMsg   = document.getElementById('cart-msg');
 
@@ -281,8 +279,6 @@
                 cartMsg.style.display = 'block';
                 bagNowBtn.disabled = false;
                 bagNowBtn.textContent = 'BAG NOW';
-                // Uncomment to send customers straight to checkout instead:
-                // window.location.href = '/cart';
             })
             .catch(() => {
                 cartMsg.textContent = 'Something went wrong. Try again.';
